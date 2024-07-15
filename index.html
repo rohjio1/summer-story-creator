@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개일초등학교 여름 이야기 만들기</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>개일초등학교 여름 이야기 만들기</h1>
+    </header>
+    <main>
+        <section id="story-creator">
+            <h2>나만의 이야기를 만들어보세요!</h2>
+            <form id="story-form">
+                <label for="character">주인공 이름:</label>
+                <input type="text" id="character" name="character" required>
+                
+                <label for="place">배경:</label>
+                <select id="place" name="place" required>
+                    <option value="">선택하세요</option>
+                    <option value="바다">바다</option>
+                    <option value="산">산</option>
+                    <option value="우주">우주</option>
+                </select>
+                
+                <label for="action">주인공의 행동:</label>
+                <input type="text" id="action" name="action" required>
+                
+                <button type="submit">이야기 만들기</button>
+            </form>
+        </section>
+        <section id="story-result">
+            <h2>완성된 이야기</h2>
+            <p id="story-text"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 개일초등학교. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
